@@ -1,0 +1,57 @@
+body {
+    background-color: #9694FF;
+    font-family: "Arial", sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* navbar */
+.navbar {
+    background-color: #8B5DFF;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+/* task */
+.task-container {
+    border-radius: 15px;
+    margin: 15px 0;
+    padding: 5px 15px;
+    border: 2.6px solid #8B5DFF;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    /* flex-direction: column; */
+}
+
+.piority-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Modal */
+
+.modall {
+    border-radius: 15px;
+    border: 1px solid #8B5DFF;
+}
+
+dialog::backdrop {
+    opacity: 0.5;
+    background-color: #EBEAFF;
+}
+
+/* Button  */
+.btn-color {
+    color: #fff;
+    background-color: #8B5DFF;
+}
+
+.btn-color:hover {
+    color: #fff;
+    background-color: #9694FF;
+}
