@@ -18,7 +18,7 @@ export default function CreateTask() {
 
   return (
     <div className="py-3">
-      <h1>Create New</h1>
+      <h1>Create New Task</h1>
       <form onSubmit={handleTaskSubmit}>
         <input type="text" name="taskName" className="w-75 me-2 p-2" required />
         <button type="submit" className="btn  btn-color mb-1">Add</button>

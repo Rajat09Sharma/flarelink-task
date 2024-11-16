@@ -22,7 +22,7 @@ export default function Task({ title, id, isCompleted, piority }) {
     return (
         <div className="task-container" data-aos="fade-right" data-aos-duration="1000">
             <h1>{title}</h1>
-            <div className="piority-form">
+            <div className="function-box">
                 {!isCompleted && <select className="form-select mx-3" aria-label="Default select example" onChange={handlePioritySelect}>
                     <option >Select Piority</option>
                     <option value="1" selected={piority == 1 ? true : false}>High</option>
@@ -31,7 +31,6 @@ export default function Task({ title, id, isCompleted, piority }) {
                 </select>}
                 {isCompleted ? <p>Task Completed</p> : <Button onClick={handleCompleteClick} >Completed</Button>}
                 <button type="button" className="ms-3 btn btn-danger" onClick={handleTaskDelete}>Dlete</button>
-
             </div>
         </div>
     )

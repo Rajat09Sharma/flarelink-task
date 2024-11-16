@@ -16,7 +16,7 @@ export default function Modal({ open, onClose }) {
     }, [open])
 
     return (
-        <dialog ref={dialogRef} onClose={onClose} className="w-50 modall">
+        <dialog ref={dialogRef} onClose={onClose} className="modall">
             <CreateTask />
             <div className="text-end">
                 <Button onClick={onClose}>Close</Button>

@@ -23,10 +23,9 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #fff;
-    /* flex-direction: column; */
 }
 
-.piority-form {
+.function-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,6 +35,7 @@ body {
 /* Modal */
 
 .modall {
+    width: 50%;
     border-radius: 15px;
     border: 1px solid #8B5DFF;
 }
@@ -54,4 +54,18 @@ dialog::backdrop {
 .btn-color:hover {
     color: #fff;
     background-color: #9694FF;
+}
+
+@media (max-width: 768px) {
+    .modall {
+        width: 90%;
+    }
+
+    .task-container {
+        flex-direction: column;
+    }
+
+    .function-box {
+        margin: 20px 0;
+    }
 }

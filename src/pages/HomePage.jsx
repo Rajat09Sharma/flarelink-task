@@ -37,6 +37,7 @@ export default function HomePage() {
             <Navbar tasksList={tasks} onSearch={handleSearch} />
             {tasks.length !== 0 && <ShowTasksList tasksList={tasksList} />}
             <div className="w-75 mx-auto my-5">
+                {tasks.length == 0 && <h1 className="text-light text-center">No task to manage, please create task by clicking the button 👇!</h1>}
                 <p className="text-end mt-5">
                     <button type="button" className="btn btn-success" onClick={handleAddTask}>Add Task</button>
                 </p>
